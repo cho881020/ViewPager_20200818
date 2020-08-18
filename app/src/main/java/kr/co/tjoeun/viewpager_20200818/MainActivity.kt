@@ -23,6 +23,8 @@ class MainActivity : BaseActivity() {
     override fun setValues() {
         mMainPagerAdapter = MainViewPagerAdapter(supportFragmentManager)
         mainViewPager.adapter = mMainPagerAdapter
+
+        tabLayout.setupWithViewPager(mainViewPager)
     }
 
 }
